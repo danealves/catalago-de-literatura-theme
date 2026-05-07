@@ -1,0 +1,52 @@
+@use "../mixins" as *;
+
+.company-summary {
+  position: relative;
+
+  &__highlight {
+    position: relative;
+  }
+
+  // shape direita
+  &__decor-right {
+    @include absolute($top: 50%, $right: -17px);
+    width: 90px;
+    transform: translateY(-50%);
+
+    @include lg {
+      right: -90px;
+      width: 160px;
+    }
+  }
+
+  // shape esquerda
+  &__decor-left {
+    @include absolute($bottom: -7px, $left: -20px);
+    width: 90px;
+
+    @include lg {
+      left: -90px;
+      width: 160px;
+    }
+  }
+}
+
+//Literatura na FTD Educaçao
+.literature-highlights {
+  &__shape-right {
+    width: 120px;
+    right: 7px;
+    @include lg {
+      right: 60px;
+      width: 260px;
+    }
+  }
+  &__shape-left {
+    width: 120px;
+    left: 0;
+    @include lg {
+      top: 50%;
+      width: 260px;
+    }
+  }
+}

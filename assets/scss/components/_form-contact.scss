@@ -1,0 +1,188 @@
+.cl-form-contact {
+  width: 100%;
+  max-width: 804px;
+  margin: 0 auto;
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 32px !important;
+  overflow: visible;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  #rd-section-mmyym26f {
+    background: transparent !important;
+    border: 0 !important;
+  }
+
+  #rd-row-mmyym26k {
+    min-height: auto !important;
+  }
+
+  #rd-column-mmyym26l {
+    flex: 1 1 auto !important;
+
+    > div {
+      background: #f3f3f3 !important;
+      border-radius: 32px !important;
+      padding: 48px 68px 52px !important;
+      min-height: auto !important;
+      justify-content: flex-start !important;
+    }
+  }
+
+  #rd-form-mmyym26m {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 22px !important;
+    align-self: stretch !important;
+    display: block !important;
+
+    .bricks-form {
+      width: 100%;
+      display: block !important;
+    }
+
+    .bricks-form__fieldset {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 26px !important;
+      align-items: start !important;
+    }
+
+    .bricks-form__field {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .bricks-form__label {
+      display: none !important;
+      margin: 0 !important;
+    }
+
+    .bricks-form__input,
+    input,
+    textarea,
+    select {
+      width: 100% !important;
+      height: 52px !important;
+      padding: 0 16px !important;
+      background: #f3f3f3 !important;
+      border: 1px solid #cfcfcf !important;
+      border-radius: 2px !important;
+      box-shadow: none !important;
+      color: #6f6f6f !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 16px !important;
+      line-height: 1 !important;
+
+      &::placeholder {
+        color: #7f7f7f !important;
+        opacity: 1 !important;
+      }
+
+      &:focus {
+        outline: none !important;
+        border-color: #bfbfbf !important;
+        box-shadow: none !important;
+      }
+    }
+
+    select.is-placeholder {
+      color: #7f7f7f !important;
+    }
+  }
+
+  .bricks-form__submit {
+    width: 100%;
+    margin: 0 !important;
+    padding-top: 22px;
+  }
+
+  #rd-button-mmyym26p,
+  #rd-button-mmyym26p.bricks--component-button {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 74px !important;
+    margin: 0 !important;
+    padding: 0 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: stretch !important;
+    background: #31b6ca !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #31b6ca !important;
+      opacity: 0.96;
+    }
+  }
+
+  #rd-text-mmyym26q {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px 0 0 !important;
+    align-self: stretch !important;
+
+    p {
+      margin: 0 !important;
+      line-height: 1.35 !important;
+      text-align: left !important;
+    }
+
+    span {
+      color: #8a8a8a !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 14px !important;
+      line-height: 1.35 !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #rd-column-mmyym26l {
+      > div {
+        padding: 28px 20px 28px !important;
+        border-radius: 24px !important;
+      }
+    }
+
+    #rd-form-mmyym26m {
+      margin-bottom: 18px !important;
+
+      .bricks-form__fieldset {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+
+      .bricks-form__input,
+      input,
+      textarea,
+      select {
+        height: 50px !important;
+        font-size: 16px !important;
+      }
+    }
+
+    #rd-button-mmyym26p,
+    #rd-button-mmyym26p.bricks--component-button {
+      height: 62px !important;
+      font-size: 20px !important;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@use '../mixins' as *;
+
+.banner-fullwidth-section {
+    width: 100%;
+    min-height: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.banner-content-constrained {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero-breadcrumbs {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0;
+    font-size: 14px;
+    opacity: 0.9;
+
+    p {
+        display: contents !important;
+    }
+
+    br {
+        display: none !important;
+    }
+
+    a,
+    span {
+        display: inline-flex !important;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .current {
+        font-weight: 700;
+    }
+
+    .sep {
+        display: inline-flex !important;
+        margin: 0 10px;
+
+        svg {
+            width: 6px;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+
+    @include sm {
+        font-size: 32px;
+    }
+}
+
+.title-layered {
+    line-height: 1.1;
+    text-shadow: 4px 4px 0px #E16E14;
+    display: block;
+}
+
+.titulo-catalogo {
+    filter: drop-shadow(-2px 2px 0px #005596);
+}

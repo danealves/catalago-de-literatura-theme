@@ -18,17 +18,22 @@
 	},
 	"devDependencies": {
 		"@wordpress/browserslist-config": "^6.34.0",
+		"@wordpress/scripts": "^27.1.0",
+		"archiver": "^7.0.1",
+		"cssnano": "^7.1.2",
 		"postcss": "^8.5.6",
 		"postcss-cli": "^11.0.1",
-		"cssnano": "^7.1.2",
-		"@wordpress/scripts": "^27.1.0"
+		"sass": "^1.98.0"
 	},
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
 	],
-  "scripts": {
-	"build": "wp-scripts build",
-    "start": "wp-scripts start",
-    "watch": "postcss style.css --use cssnano -o style.min.css --no-map --watch"
-  }
+	"scripts": {
+		"build": "wp-scripts build && npm run build:scss",
+		"build:scss": "sass assets/scss/style.scss assets/css/style.css --no-source-map --style=compressed",
+		"package": "npm run build:scss && node scripts/package-theme.js",
+		"start": "wp-scripts start",
+		"watch": "postcss style.css --use cssnano -o style.min.css --no-map --watch",
+		"watch:scss": "sass assets/scss/style.scss assets/css/style.css --no-source-map --watch"
+	}
 }

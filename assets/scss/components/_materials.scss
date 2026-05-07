@@ -1,0 +1,126 @@
+@use '../mixins' as *;
+
+.mc-secao {
+    padding: 80px 40px;
+    background: #fff;
+
+    @include sm {
+        padding: 60px 20px;
+    }
+}
+
+.mc-header {
+    margin-bottom: 40px;
+}
+
+.mc-estrelas {
+    color: #E8873A;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mc-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.mc-grid {
+    display: grid;
+    gap: 24px;
+
+    &--1 {
+        grid-template-columns: minmax(280px, 420px);
+    }
+
+    &--2 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 860px;
+    }
+
+    &--3 {
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 640px) {
+        &--1,
+        &--2,
+        &--3 {
+            grid-template-columns: 1fr;
+        }
+
+        &--1 {
+            max-width: 100%;
+        }
+    }
+}
+
+.mc-card {
+    background: #F5F5F5;
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mc-card__icone {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.mc-card__label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.mc-card__titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.mc-card__descricao {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+.mc-card__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    margin-top: 8px;
+    width: fit-content;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.85;
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+        fill: #fff;
+        flex-shrink: 0;
+    }
+}

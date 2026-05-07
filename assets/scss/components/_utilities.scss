@@ -1,0 +1,23 @@
+.wp-block-post {
+  list-style: none !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.text-align-center p {
+  text-align: center !important;
+}
+
+.single-post-featured-image img {
+  border-radius: 20px;
+}
+
+:where(.wp-site-blocks) > * {
+  margin-block-start: 0 !important;
+}
+
+:root :where(.wp-block-post-terms a) {
+  white-space: pre-wrap !important;
+}
