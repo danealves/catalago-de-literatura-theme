@@ -32,3 +32,11 @@ $color-light-blue: #46b2ff;
     flex-direction: row;
   }
 }
+
+.hide-on-mobile {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
