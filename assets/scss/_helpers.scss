@@ -34,9 +34,7 @@ $color-light-blue: #46b2ff;
 }
 
 .hide-on-mobile {
-  display: none;
-
-  @include lg {
-    display: block;
+  @include sm {
+    display: none !important;
   }
 }

@@ -1,14 +1,15 @@
-@use 'mixins' as *;
-@use 'helpers';
+@use "mixins" as *;
+@use "helpers";
 
 // Components
-@use 'components/banner';
-@use 'components/awards';
-@use 'components/materials';
-@use 'components/footer';
-@use 'components/utilities';
-@use 'components/form-contact';
+@use "components/banner";
+@use "components/awards";
+@use "components/materials";
+@use "components/footer";
+@use "components/utilities";
+@use "components/form-contact";
 
 // Pages
-@use 'pages/home';
-@use 'pages/home-slider';
+@use "pages/home";
+@use "pages/home-slider";
+@use "pages/single-obras";

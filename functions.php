@@ -23,6 +23,7 @@ $modules = [
     'inc/filters/term-links.php',
     'inc/filters/thumbnails.php',
     'inc/filters/block-visibility.php',
+    'inc/filters/obra-ordering.php',
 
     // Shortcodes
     'inc/shortcodes/banner.php',

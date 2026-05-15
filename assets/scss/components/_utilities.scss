@@ -6,8 +6,12 @@
   border: none !important;
 }
 
-.text-align-center p {
+.text-align-center {
   text-align: center !important;
+
+  p {
+    text-align: center !important;
+  }
 }
 
 .single-post-featured-image img {

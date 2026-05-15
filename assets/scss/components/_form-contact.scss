@@ -186,3 +186,80 @@
     }
   }
 }
+
+// ─── Formulário de Contato — RD Station (lzbc8tcs) ───
+.form-contato {
+  .rd-column > div,
+  .rd-form {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #rd-form-lzbc8tcs {
+    form {
+      max-width: 100%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 40px 50px;
+    }
+
+    .bricks-form__field {
+      padding: 10px;
+      margin: 0;
+    }
+
+    .bricks-form__label,
+    .bricks-form__static {
+      font-family: Poppins;
+      font-size: 12px;
+      color: #6d6d6d;
+    }
+
+    .bricks-form__static a {
+      color: #d96704;
+      text-decoration: none;
+    }
+
+    .bricks-form__input {
+      font-family: Poppins;
+      line-height: 1;
+      color: #6d6d6d;
+      height: auto;
+      border-radius: 2px;
+      border-color: #dddd;
+      padding: 10px;
+
+      &:hover,
+      &:focus {
+        border-color: #04c4d9;
+      }
+    }
+
+    .bricks-form__submit button {
+      font-family: Poppins;
+      font-size: 16px;
+      background-color: #04c4d9;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s;
+      padding: 12px 20px !important;
+      line-height: 1 !important;
+
+      &:hover,
+      &:focus {
+        background-color: #fde1d9;
+      }
+    }
+  }
+}
+
+#rd-button-lzbc8tcv.bricks--component-button {
+  height: auto !important;
+}
+
+.phone-country {
+  border: solid 1px #dddd !important;
+  margin-right: 1px !important;
+}
