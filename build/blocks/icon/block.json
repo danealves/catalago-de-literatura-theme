@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cl/icon",
+  "version": "1.0.0",
+  "title": "Ícone",
+  "category": "design",
+  "icon": "star-filled",
+  "description": "Exibe um ícone Dashicon ou uma imagem personalizada do Media Library.",
+  "keywords": [
+    "icon",
+    "ícone",
+    "dashicon",
+    "imagem"
+  ],
+  "textdomain": "catalago-de-literatura",
+  "attributes": {
+    "source": {
+      "type": "string",
+      "default": "dashicon"
+    },
+    "dashicon": {
+      "type": "string",
+      "default": "star-filled"
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "mediaId": {
+      "type": "number",
+      "default": 0
+    },
+    "mediaUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "size": {
+      "type": "number",
+      "default": 48
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "left",
+      "center",
+      "right"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

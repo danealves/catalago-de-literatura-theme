@@ -1,0 +1,118 @@
+/**
+ * Block: cl/icon — Editor styles
+ */
+
+/* ── Source toggle ── */
+.cl-icon-source-toggle {
+	display: flex;
+	width: 100%;
+	margin-bottom: 16px;
+
+	.components-button {
+		flex: 1;
+		justify-content: center;
+	}
+}
+
+/* ── Dashicon picker ── */
+.cl-icon-picker {
+	margin-top: 12px;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 4px;
+		max-height: 260px;
+		overflow-y: auto;
+		padding: 4px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		background: #fafafa;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		aspect-ratio: 1;
+		padding: 0;
+		border: 2px solid transparent;
+		border-radius: 4px;
+		background: #fff;
+		cursor: pointer;
+		transition: all 0.15s ease;
+
+		.dashicons {
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			color: #1e1e1e;
+		}
+
+		&:hover {
+			border-color: #007cba;
+			background: #f0f6fc;
+		}
+
+		&.is-selected {
+			border-color: #007cba;
+			background: #e7f3ff;
+			box-shadow: 0 0 0 1px #007cba;
+		}
+	}
+
+	&__empty {
+		text-align: center;
+		color: #757575;
+		font-style: italic;
+		padding: 12px 0;
+	}
+}
+
+/* ── Media upload ── */
+.cl-icon-media {
+	margin-top: 12px;
+
+	&__controls {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__preview {
+		max-width: 100%;
+		max-height: 120px;
+		object-fit: contain;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		padding: 8px;
+		background: #fafafa;
+	}
+
+	&__btn {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+/* ── Block preview in editor ── */
+.cl-icon-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.dashicons {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	img {
+		display: block;
+	}
+
+	&__svg-mask {
+		display: inline-block;
+	}
+}

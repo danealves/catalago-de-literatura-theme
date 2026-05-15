@@ -34,6 +34,7 @@ $modules = [
 
     // Blocos
     'inc/blocks/related-obras.php',
+    'inc/blocks/icon.php',
 ];
 
 foreach ( $modules as $module ) {
