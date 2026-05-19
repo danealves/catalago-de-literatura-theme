@@ -18,6 +18,10 @@
     border: 0 !important;
   }
 
+  #rd-section-lzbc8tcl {
+    border-radius: 20px !important;
+  }
+
   #rd-row-mmyym26k {
     min-height: auto !important;
   }
@@ -25,7 +29,7 @@
   #rd-column-mmyym26l {
     flex: 1 1 auto !important;
 
-    > div {
+    >div {
       background: #f3f3f3 !important;
       border-radius: 32px !important;
       padding: 48px 68px 52px !important;
@@ -156,7 +160,7 @@
 
   @media (max-width: 767px) {
     #rd-column-mmyym26l {
-      > div {
+      >div {
         padding: 28px 20px 28px !important;
         border-radius: 24px !important;
       }
@@ -185,11 +189,18 @@
       font-size: 20px !important;
     }
   }
+
+  .formulario-icone-estrelas {
+    top: -63px;
+    z-index: 99;
+    right: 60px;
+  }
 }
 
 // ─── Formulário de Contato — RD Station (lzbc8tcs) ───
 .form-contato {
-  .rd-column > div,
+
+  .rd-column>div,
   .rd-form {
     padding: 0 !important;
     margin: 0 !important;
