@@ -6,7 +6,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 
 ---
 
-## [Unreleased]
+## [1.0.6] — 2026-05-19
 
 ### Corrigido
 - Cor vermelha de background vazando no border-radius da seção do formulário RD Station — adicionado `border-radius: 20px` em `#rd-section-lzbc8tcl`
